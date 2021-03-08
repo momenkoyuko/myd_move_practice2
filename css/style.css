@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*はじめは透過0に*/
+
+.fadeInUpTrigger,
+.fadeInDownTrigger{
+	opacity: 0;
+}
+
+/*========= アニメーションの指定 ===============*/
+
+
+/* アニメーションの回数を決めるCSS*/
+
+.count2{  
+	animation-iteration-count: 2;/*この数字を必要回数分に変更*/
+}
+
+/* アニメーションスタートの遅延時間を決めるCSS*/
+
+.delay-time{  
+	animation-delay: 0.5s;
+}
+
+/* アニメーション自体が変化する時間を決めるCSS*/
+
+.change-time{  
+	animation-duration: 4.5s;/*この数字を変化させたい時間に変更*/
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+.wrapper{
+	overflow: hidden;
+}
+
+
+.flex{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.box{
+	width: 220px;
+	padding: 20px;
+	margin:0 20px 20px 0;
+	background: #666;
+	color: #fff;
+	box-sizing:border-box;
+}
+
+a{
+	text-decoration: none;
+	display: block;
+	color: #fff;
+}

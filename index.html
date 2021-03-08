@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryの導入</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============Animate.cssのCDNを読み込み===============-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<div class="wrapper">
+<!--基本設定＆アニメーションの回数設定-->
+<p>スクロールをすると動きます</p>
+<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓
+	
+<div class="flex">
+<div class="box fadeInUpTrigger">すぐ現れるボックス</div><!--fadeInUpTrigger-->
+<div class="box animate__infinite">アニメーション無限ループ</div><!--fadeInUpTrigger-->
+<div class="box count2 fadeInDownTrigger">独自設定：アニメーション回数指定（2回）</div><!--fadeInUpTrigger-->
+<!--/flex--></div>
+	
+<!--アニメーションがスタートするタイミング設定-->	
+<div class="flex">
+<div class="box animate__delay-1s">アニメーションが1秒遅れでスタート</div><!--fadeInUpTrigger-->
+<div class="box animate__delay-2s">アニメーションが2秒遅れでスタート</div><!--fadeInUpTrigger-->
+<div class="box animate__delay-3s">アニメーションが3秒遅れでスタート</div><!--fadeInUpTrigger-->
+<div class="box animate__delay-4s">アニメーションが4秒遅れでスタート</div><!--fadeInUpTrigger-->
+<div class="box animate__delay-5s">アニメーションが5秒遅れでスタート</div><!--fadeInUpTrigger-->
+<div class="box delay-time">（CSS独自設定）アニメーションが0.5秒遅れでスタート</div><!--fadeInUpTrigger-->
+<!--/flex--></div>
+	
+<!--アニメーションの変化時間の設定-->
+<div class="flex">
+<div class="box animate__slow">アニメーションの変化のスピードが遅い</div><!--fadeInUpTrigger-->
+<div class="box animate__slower">アニメーションの変化のスピードがさらに遅い</div><!--fadeInUpTrigger-->
+<div class="box animate__fast">アニメーションの変化のスピードが速い</div><!--fadeInUpTrigger-->
+<div class="box animate__faster">アニメーションの変化のスピードがさらに速い</div><!--fadeInUpTrigger-->
+<div class="box change-time">（CSS独自設定）アニメーションの変化のスピードが4.5秒</div><!--fadeInUpTrigger-->
+<!--/flex--></div>
+	
+<!--/wrapper--></div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
